@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Merriweather } from "next/font/google";
+
 import "./globals.css";
 
-import { Merriweather } from "next/font/google";
+import { siteConfig } from "@/config";
 
 const merriweather = Merriweather({
   weight: ["300", "400", "700", "900"],
@@ -10,9 +12,13 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Mood Makers",
-  description:
-    "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space",
+  title: {
+    default: siteConfig.title,
+    template: `%s - ${siteConfig.title}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  openGraph: siteConfig.openGraph,
 };
 
 export default function RootLayout({
@@ -22,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merriweather.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${merriweather.className}`}>{children}</body>
     </html>
   );
 }

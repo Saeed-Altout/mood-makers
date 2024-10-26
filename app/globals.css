@@ -75,9 +75,12 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border tracking-wide;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground bg-mood-light;
+  }
+  p {
+    @apply text-mood-primary leading-8 tracking-wide;
   }
 }

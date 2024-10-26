@@ -44,6 +44,7 @@ const config: Config = {
           primary: "#39556E",
           secondary: "#BDC7CD",
           light: "#DEE3E5",
+          gray: "#88939B",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
