@@ -39,6 +39,9 @@ export default function ourProjectsPage() {
               <div className="grid grid-cols-1 w-full gap-16">
                 {item.imgUrlBefore && (
                   <div className="relative rounded-3xl overflow-hidden">
+                    <p className="absolute top-4 md:top-6 lg:top-8 left-4 md:left-6 lg:left-8 z-50 text-white font-bold text-base md:text-xl lg:text-2xl">
+                      Before
+                    </p>
                     <p className="absolute top-4 md:top-6 lg:top-8 right-4 md:right-6 lg:right-8 z-50 text-white font-bold text-base md:text-xl lg:text-2xl">
                       {format(item.date, "dd")} | {format(item.date, "MM")} |
                       {format(item.date, "yyyy")}
@@ -55,6 +58,9 @@ export default function ourProjectsPage() {
                 )}
                 {item.imgUrlAfter && (
                   <div className="relative rounded-3xl overflow-hidden">
+                    <p className="absolute top-4 md:top-6 lg:top-8 left-4 md:left-6 lg:left-8 z-50 text-white font-bold text-base md:text-xl lg:text-2xl">
+                      After
+                    </p>
                     <p className="absolute top-4 md:top-6 lg:top-8 right-4 md:right-6 lg:right-8 z-50 text-white font-bold text-base md:text-xl lg:text-2xl">
                       {format(item.date, "dd")} | {format(item.date, "MM")} |{" "}
                       {format(item.date, "yyyy")}
