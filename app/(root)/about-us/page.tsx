@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import { heroAboutUs } from "@/constants";
 import { Papers } from "./_components/papers";
-import { Certificates } from "./_components/certificates";
 
 import { Hero } from "@/components/ui/hero";
 import { Heading } from "@/components/ui/heading";
@@ -27,7 +26,6 @@ export default function AboutUsPage() {
         lDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
       />
       <Papers />
-      <Certificates />
     </main>
   );
 }
