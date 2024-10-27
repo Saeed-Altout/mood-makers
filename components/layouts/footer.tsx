@@ -1,5 +1,7 @@
 import { FaAddressBook, FaEnvelope, FaFax, FaMobile } from "react-icons/fa";
 import { Typography } from "@/components/ui/typography";
+import Image from "next/image";
+import { bgFooter } from "@/constants";
 
 export const Footer = () => {
   const contactInfo = [
@@ -31,9 +33,14 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="py-10 overflow-x-hidden">
+    <footer className="relative py-10 overflow-x-hidden">
+      <Image
+        src={bgFooter}
+        alt="background image"
+        className="block md:hidden w-full h-full absolute top-0 left-0 object-cover"
+      />
       <div className="container space-y-10">
-        <h3 className="text-center text-mood-primary text-xl md:text-2xl lg:text-3xl leading-10 max-w-5xl mx-auto">
+        <h3 className="text-center text-mood-light md:text-mood-primary text-xl md:text-2xl lg:text-3xl leading-10 max-w-5xl mx-auto">
           Join us for an exciting adventure!
         </h3>
         <div className="relative pt-10">
@@ -44,8 +51,10 @@ export const Footer = () => {
                 key={index}
                 className="flex flex-col justify-start items-center gap-4 xl:gap-10"
               >
-                <Icon className="text-mood-primary xl:text-mood-light text-4xl" />
-                <Typography className="text-center">{label}</Typography>
+                <Icon className="text-mood-light md:text-mood-primary xl:text-mood-light text-4xl" />
+                <Typography className="text-center text-mood-light md:text-mood-primary">
+                  {label}
+                </Typography>
               </div>
             ))}
           </div>
