@@ -5,9 +5,9 @@ import { Typography } from "@/components/ui/typography";
 
 interface HeadingProps {
   label: string;
-  fDescription: string;
-  pDescription: string;
-  lDescription: string;
+  fDescription?: string;
+  pDescription?: string;
+  lDescription?: string;
 }
 
 export const Heading = ({

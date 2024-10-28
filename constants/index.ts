@@ -2,6 +2,7 @@ import heroAboutUs from "@/public/hero-about-us.png";
 import heroOurProjects from "@/public/hero-our-projects.png";
 import heroOurServices from "@/public/hero-our-services.png";
 import bgFooter from "@/public/bg-footer.png";
+import heroExecutiveSummary from "@/public/hero-executive-summary.png";
 
 const projects = [
   {
@@ -677,12 +678,74 @@ const services = [
   },
 ];
 
+const dataSummary = [
+  {
+    id: 1,
+    title: "VISION",
+    description:
+      "Our vision is to be the leading interior design and fit-out company, renowned for our creativity, reliability, and excellence. We aim to set new standards in the industry by continuously evolving and embracing cutting-edge design trends and sustainable practices, thereby enhancing the lives of our clients and the communities we serve",
+    children: [],
+  },
+  {
+    id: 2,
+    title: "MISSION",
+    description:
+      "Our vision is to be the leading interior design and fit-out company, renowned for our creativity, reliability, and excellence. We aim to set new standards in the industry by continuously evolving and embracing cutting-edge design trends and sustainable practices, thereby enhancing the lives of our clients and the communities we serve",
+    children: [],
+  },
+  {
+    id: 3,
+    title: "CORE VALUES",
+    description: null,
+    children: [
+      {
+        id: 1,
+        title: "CREATIVITY",
+        description:
+          "We embrace creativity and innovation to deliver unique and personalized design solutions.",
+      },
+      {
+        id: 2,
+        title: "SUSTAINABILITY",
+        description:
+          "We prioritize sustainable practices to create environmentally friendly and energy-efficient spaces.",
+      },
+      {
+        id: 3,
+        title: "INTEGRITY",
+        description:
+          "We conduct our business with honesty,transparency, and professionalism.",
+      },
+      {
+        id: 4,
+        title: "QUALITY",
+        description:
+          "We embrace creativity and innovation to deliver unique and personalized design solutions.",
+      },
+      {
+        id: 5,
+        title: "COLLABORATION",
+        description:
+          "We believe in the power of teamwork and collaboration, working closely with clients, partners, and our internal team to achieve outstanding results.",
+      },
+      {
+        id: 6,
+        title: "CLIENT-CENTRIC",
+        description:
+          "Our clients' needs and satisfaction are at the forefront of everything we do.",
+      },
+    ],
+  },
+];
+
 export {
   heroAboutUs,
   heroOurProjects,
   heroOurServices,
   bgFooter,
   projects,
+  heroExecutiveSummary,
   titleServices,
   services,
+  dataSummary,
 };
