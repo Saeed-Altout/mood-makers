@@ -738,6 +738,100 @@ const dataSummary = [
   },
 ];
 
+const ourServices = [
+  {
+    id: 1,
+    title: "DOORS & WINDOWS INSTALLATION WORK",
+    description:
+      "our skilled team leverages expertise and premium materials to deliver results that exceed expectations. Whether it's upgrading existing structures or outfitting new developments, our dedication to quality craftsmanship and customer satisfaction remains unwavering, making us the preferred choice for all doors and windows installation needs.",
+  },
+  {
+    id: 2,
+    title: "INSTALLATION OF FUUNATURE WORKS",
+    description:
+      "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space.",
+  },
+  {
+    id: 3,
+    title: "TINGING AND PAINTING WORKS",
+    description:
+      "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space",
+    group: {
+      title: "Wall finishing works",
+      imgUrl: "",
+      children: [
+        {
+          id: 1,
+          title: "Wall Cladding Supply and Installation",
+          description:
+            "We offer a diverse range of wall cladding options and expert installation services to enhance the appearance and durability of your walls.",
+        },
+        {
+          id: 2,
+          title: "Painting Works: Our skilled painters",
+          description:
+            "provide high-quality painting services, using premium paints and techniques to achieve flawless finishes that breathe new life into your walls.",
+        },
+        {
+          id: 3,
+          title: "Decorative Special Painting",
+          description:
+            "Elevate your space with our specialized decorative painting services, including faux finishes, texture painting, murals, and other artistic techniques to add character and charm to your walls.",
+        },
+        {
+          id: 3,
+          title: "Wallpaper Supply and Installation",
+          description:
+            "Explore our extensive collection of wallpapers and let our experienced team handle the professional installation, transforming your walls with patterns, textures, and colors that suit your style",
+        },
+      ],
+    },
+  },
+];
+
+const servicesList = [
+  {
+    id: 1,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 2,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 3,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 4,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 5,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 6,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 7,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 8,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 9,
+    title: "Lorem ipsum dolor sit amet",
+  },
+  {
+    id: 10,
+    title: "Lorem ipsum dolor sit amet",
+  },
+];
+
 export {
   heroAboutUs,
   heroOurProjects,
@@ -748,4 +842,6 @@ export {
   titleServices,
   services,
   dataSummary,
+  ourServices,
+  servicesList,
 };

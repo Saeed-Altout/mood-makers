@@ -4,7 +4,7 @@ import { Hero } from "@/components/ui/hero";
 import { Section } from "@/components/ui/section";
 import { Heading } from "@/components/ui/heading";
 import { Typography } from "@/components/ui/typography";
-import { heroOurServices } from "@/constants";
+import { heroOurServices, servicesList } from "@/constants";
 
 export default function OurServices() {
   return (
@@ -40,6 +40,72 @@ export default function OurServices() {
             ensures meticulous planning, precise execution, and timely
             completion of projects
           </Typography>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-6">
+            {servicesList.map((item, index) => (
+              <div
+                key={index}
+                className="bg-mood-primary py-4 pl-10 pr-5 flex justify-start items-center gap-5 rounded-full"
+              >
+                <span className="text-white">
+                  {index < 9 ? `0${index + 1}` : index + 1}
+                </span>
+                <p className="text-white">{item.title}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center items-center flex-col gap-10">
+            <div className="w-full flex justify-start items-center flex-col gap-5">
+              <div className="w-full flex justify-start items-center gap-5">
+                <span className="text-mood-primary text-8xl font-semibold">
+                  01
+                </span>
+                <p className="flex-1 text-white bg-mood-primary text-2xl font-semibold py-6 px-4">
+                  DOORS & WINDOWS INSTALLATION WORK
+                </p>
+              </div>
+              <Typography>
+                our skilled team leverages expertise and premium materials to
+                deliver results that exceed expectations. Whether it&apos;s
+                upgrading existing structures or outfitting new developments,
+                our dedication to quality craftsmanship and customer
+                satisfaction remains unwavering, making us the preferred choice
+                for all doors and windows installation needs
+              </Typography>
+            </div>
+
+            <div className="w-full flex justify-start items-center flex-col gap-5">
+              <div className="w-full flex justify-start items-center gap-5">
+                <span className="text-mood-primary text-8xl font-semibold">
+                  02
+                </span>
+                <p className="flex-1 text-white bg-mood-primary text-2xl font-semibold py-6 px-4">
+                  INSTALLATION OF FUUNATURE WORKS
+                </p>
+              </div>
+
+              <div className="relative bg-mood-primary w-full h-[700px] rounded-[105px] overflow-hidden flex justify-center items-center z-0">
+                <div className="relative bg-mood-light h-[97%] w-[95%] md:w-[90%] rounded-[105px] translate-x-[25px] md:translate-x-[45px] lg:translate-x-[65px] flex justify-center items-center z-40">
+                  <div className="relative h-[97%] w-[91%] z-50">
+                    <Image
+                      src="/serve.png"
+                      alt="Image"
+                      fill
+                      className="object-cover rounded-[105px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <Typography>
+                Our company specializes in Furniture Installation Works,
+                offering precise setup services tailored for residential and
+                commercial settings. Our dedicated team meticulously assembles
+                and positions furniture, ensuring optimal functionality and
+                visual appeal in every space
+              </Typography>
+            </div>
+          </div>
         </div>
       </Section>
     </main>
