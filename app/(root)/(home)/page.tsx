@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function HomePage() {
-  return <div>Welcome in mood makers</div>;
+  redirect("/about-us");
 }
