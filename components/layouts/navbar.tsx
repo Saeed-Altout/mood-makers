@@ -23,7 +23,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="bg-mood-primary fixed top-0 left-0 w-full z-50">
+    <header className="bg-mood-primary fixed top-0 left-0 w-full z-[10000]">
       <nav className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4">
         <Logo />
         <ul className="hidden lg:flex items-center justify-end gap-2">
