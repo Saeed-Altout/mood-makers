@@ -832,6 +832,191 @@ const servicesList = [
   },
 ];
 
+const serviceSteps = [
+  {
+    number: "01",
+    title: "Doors & Windows Installation Work",
+    description:
+      "our skilled team leverages expertise and premium materials to deliver results that exceed expectations. Whether it's upgrading existing structures or outfitting new developments, our dedication to quality craftsmanship and customer satisfaction remains unwavering, making us the preferred choice for all doors and windows installation needs",
+    subsections: [],
+    image: null,
+  },
+  {
+    number: "02",
+    title: "Installation of Furniture Works",
+    image: "/serve.png",
+    description:
+      "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space",
+    subsections: [],
+  },
+  {
+    number: "03",
+    title: "Tiling and Painting Works",
+    image: "/serve.png",
+    description:
+      "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space",
+    groups: [
+      {
+        title: "Wall Finishing Works",
+        image: "/serve.png",
+        sections: [
+          {
+            title: "Wall Cladding Supply and Installation",
+            content: {
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+              list: [],
+            },
+            image: null,
+            label: null,
+          },
+          {
+            title: "Painting Works Our Skilled Painters",
+            content: {
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+              list: [],
+            },
+            image: null,
+            label: null,
+          },
+          {
+            title: "Decorative Special Painting",
+            content: {
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+              list: [],
+            },
+            image: null,
+            label: null,
+          },
+          {
+            title: "Wallpaper Supply and Installation",
+            content: {
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+              list: [],
+            },
+            image: null,
+            label: null,
+          },
+        ],
+      },
+      {
+        title: "Painting Works",
+        image: "/serve.png",
+        sections: [
+          {
+            title: "Internal Paints",
+            content: {
+              description: null,
+              list: [
+                "Emulsion Paint",
+                "Enamel Paint",
+                "Acrylic Paint",
+                "Distemper Paint",
+              ],
+            },
+            image: "/serve.png",
+            label: null,
+          },
+          {
+            title: "Painting Works Our Skilled Painters",
+            content: {
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+              list: [],
+            },
+            image: "/serve.png",
+            label: null,
+          },
+          {
+            title: "Decorative Special Painting",
+            content: {
+              description: null,
+              list: [
+                "Emulsion Paint",
+                "Enamel Paint",
+                "Acrylic Paint",
+                "Distemper Paint",
+              ],
+            },
+            image: "/serve.png",
+            label: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    number: "04",
+    title: "floor wall tiling works",
+    image: null,
+    description: null,
+    groups: [
+      {
+        title: "Flooring works:",
+        image: null,
+        sections: [
+          {
+            title: "Wall Cladding Supply and Installation",
+            content: {
+              description: null,
+              list: [
+                "Porcelain, marble, ceramic, and tilling supply and installation",
+                "carpet supply and installation",
+                "Epoxy works",
+                "screed casting",
+                "Cast in situ flooring",
+                "rubber flooring",
+              ],
+            },
+            image: "/serve.png",
+            label: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    number: "05",
+    title: "swimming pool installation works",
+    image: null,
+    description: null,
+    groups: [
+      {
+        title: "Flooring works:",
+        image: null,
+        sections: [
+          {
+            title: "",
+            content: {
+              description:
+                "We are dedicated to designing and building swimming pools that turn your space into a personal paradise. Our includes:",
+              list: [
+                "Overflow Systems",
+                "Skimmer Systems Infinity Pools",
+                "Mirror Effect Pools",
+                "Bio-Design Pools",
+              ],
+            },
+            image: "/serve.png",
+            label: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    number: "06",
+    title: "Wallpaper Fixing Works",
+    image: "/serve.png",
+    description:
+      "Create your dream home with Mood makers. With thousands of wallpaper designs available, you ll be sure to find your style.",
+    groups: [],
+  },
+];
+
 export {
   heroAboutUs,
   heroOurProjects,
@@ -844,4 +1029,5 @@ export {
   dataSummary,
   ourServices,
   servicesList,
+  serviceSteps,
 };
