@@ -3,7 +3,7 @@ import heroOurProjects from "@/public/hero-our-projects.png";
 import heroOurServices from "@/public/hero-our-services.png";
 import bgFooter from "@/public/bg-footer.png";
 import heroExecutiveSummary from "@/public/hero-executive-summary.png";
-
+import heroBusinessProcess from "@/public/hero-business-process.png";
 const projects = [
   {
     id: 1,
@@ -1017,7 +1017,41 @@ const serviceSteps = [
   },
 ];
 
+const progressStep = [
+  {
+    id: 1,
+    number: "01",
+    description: "CLIENT MEETING AND BRAINSTORMING",
+    imgUrl: "/service-08.png",
+  },
+  {
+    id: 2,
+    number: "02",
+    description: "SKETCHING CLIENT REQUIREMENTS",
+    imgUrl: "/service-07.png",
+  },
+  {
+    id: 3,
+    number: "03",
+    description: "CONTRACT AGREEMENT",
+    imgUrl: "/service-06.png",
+  },
+  {
+    id: 4,
+    number: "04",
+    description: "CONCEPT 2D & 3D PRESENTATION",
+    imgUrl: "/service-05.png",
+  },
+  {
+    id: 5,
+    number: "05",
+    description: "HANDING OVER OF FULL CONCEPT (2D DRAWINGS & 3D PERSPECTIVES)",
+    imgUrl: "/service-04.png",
+  },
+];
+
 export {
+  progressStep,
   heroAboutUs,
   heroOurProjects,
   heroOurServices,
@@ -1030,4 +1064,5 @@ export {
   ourServices,
   servicesList,
   serviceSteps,
+  heroBusinessProcess,
 };
