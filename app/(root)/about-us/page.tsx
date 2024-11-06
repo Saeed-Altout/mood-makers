@@ -7,7 +7,9 @@ import { Hero } from "@/components/ui/hero";
 import { Heading } from "@/components/ui/heading";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Community Project for Emotional Wellness",
+  description:
+    "Discover Mood Makers, a community-driven project dedicated to promoting emotional wellness. Learn about our mission, view important certifications, and understand how we are making a difference.",
 };
 
 export default function AboutUsPage() {

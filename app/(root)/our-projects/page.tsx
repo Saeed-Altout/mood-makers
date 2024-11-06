@@ -7,6 +7,13 @@ import { Typography } from "@/components/ui/typography";
 import { CallOut } from "@/components/ui/call-out";
 import { Section } from "@/components/ui/section";
 import { format } from "date-fns";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Completed Community Projects",
+  description:
+    "Explore the completed projects by Mood Makers, showcasing successful renovations and installations across various facilities. From private villas to recreational and therapeutic centers, see how our team enhances spaces to support emotional and physical well-being.",
+};
 
 export default function ourProjectsPage() {
   return (

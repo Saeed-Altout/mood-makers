@@ -3,6 +3,13 @@ import { Heading } from "@/components/ui/heading";
 import { Section } from "@/components/ui/section";
 import { Typography } from "@/components/ui/typography";
 import { dataSummary, heroExecutiveSummary } from "@/constants";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Executive Summary, Vision, and Core Values",
+  description:
+    "Explore Mood Makers' mission to transform spaces through creativity, sustainability, and excellence. Learn about our vision to be an industry leader, our commitment to sustainable and client-centered practices, and the core values that guide our work.",
+};
 
 export default function ExecutiveSummary() {
   return (

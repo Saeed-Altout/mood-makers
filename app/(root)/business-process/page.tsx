@@ -9,7 +9,9 @@ import { Section } from "@/components/ui/section";
 import { Typography } from "@/components/ui/typography";
 
 export const metadata: Metadata = {
-  title: "Business Process",
+  title: "Business Process & Project Workflow",
+  description:
+    "Discover Mood Makers' step-by-step approach to delivering exceptional interior design and fit-out services. From initial client meetings to final handovers, our structured workflow ensures quality and client satisfaction at every stage.",
 };
 
 export default function BusinessProcessPage() {
@@ -30,10 +32,10 @@ export default function BusinessProcessPage() {
           {progressStep.map((step) => (
             <div key={step.id} className="flex flex-col md:flex-row gap-8">
               <div className="flex-1 space-y-4 flex items-center justify-start gap-5">
-                <span className="text-mood-primary text-[100px]">
+                <span className="text-mood-primary text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                   {step.number}
                 </span>
-                <h3 className="text-mood-primary text-lg md:text-xl lg:text-2xl lg:leading-[60px] min-w-[200px]">
+                <h3 className="text-mood-primary font-semibold text-xl md:text-2xl lg:text-3xl lg:leading-[60px] min-w-[200px]">
                   {step.description}
                 </h3>
               </div>

@@ -11,7 +11,7 @@ export const HeadingStep = ({
         {stepNumber}
       </h2>
       <div className="flex-grow bg-mood-primary py-4 md:py-6 lg:py-8 px-5">
-        <h3 className="text-white text-lg md:text-2xl lg:text-4xl xl:text-6xl">
+        <h3 className="text-white text-lg md:text-2xl lg:text-4xl">
           {title.toUpperCase()}
         </h3>
       </div>

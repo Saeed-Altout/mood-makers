@@ -23,18 +23,20 @@ export const ServicesStep = () => {
                   key={index}
                   className="relative flex w-full flex-1 flex-col gap-12"
                 >
-                  <p className="flex-1 bg-mood-primary px-5 py-6 font-semibold tracking-wider text-white text-2xl md:text-3xl lg:text-4xl">
+                  <p className="flex-1 bg-mood-primary px-5 py-6 font-medium tracking-wider text-white text-lg md:text-2xl lg:text-4xl">
                     {group.title}
                   </p>
 
                   {group.sections.map((section, index) => (
                     <div
                       key={index}
-                      className="relative space-y-6 pl-10 before:absolute before:left-0 before:top-[-48px] before:h-[calc(100%+48px)] before:w-5 before:bg-mood-primary md:pl-16 lg:pl-20"
+                      className="relative space-y-2 pl-10 before:absolute before:left-0 before:top-[-48px] before:h-[calc(100%+48px)] before:w-5 before:bg-mood-primary md:pl-16 lg:pl-20"
                     >
-                      <h3 className="relative text-4xl font-medium text-mood-primary before:absolute before:top-1/2 before:right-[calc(100%+15px)] before:hidden before:h-10 before:w-20 before:translate-y-[-50%] before:bg-mood-primary md:before:block lg:before:right-[calc(100%+30px)]">
-                        {section.title}
-                      </h3>
+                      {section.title && (
+                        <h3 className="relative text-2xl md:text-3xl font-medium text-mood-primary before:absolute before:top-1/2 before:right-[calc(100%+15px)] before:hidden before:h-10 before:w-20 before:translate-y-[-50%] before:bg-mood-primary md:before:block lg:before:right-[calc(100%+30px)]">
+                          {section.title}
+                        </h3>
+                      )}
                       <div className="flex justify-between items-start gap-10 flex-col lg:flex-row">
                         <div className="flex-1 space-y-5">
                           {section.content.description && (
@@ -43,17 +45,17 @@ export const ServicesStep = () => {
                             </Typography>
                           )}
                           {section.content.list.length > 0 && (
-                            <ul className="flex-1">
+                            <div className="flex-1 space-y-2">
                               {section.content.list.map((item, index) => (
-                                <li
+                                <Typography
                                   key={index}
-                                  className="flex items-center gap-2 text-2xl font-normal leading-[45px] text-mood-primary"
+                                  className="flex items-center gap-2"
                                 >
                                   <GoDotFill size={15} />
                                   {item}
-                                </li>
+                                </Typography>
                               ))}
-                            </ul>
+                            </div>
                           )}
                         </div>
                         {section.image && (

@@ -8,6 +8,13 @@ import { Typography } from "@/components/ui/typography";
 import { ServicesStep } from "./_components/service-step";
 import { heroOurServices, servicesList } from "@/constants";
 import { HeadingStep } from "./_components/heading-step";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services",
+  description:
+    "Discover the range of services offered by Mood Makers, dedicated to enhancing spaces and supporting well-being. From facility renovations to therapeutic installations, explore how our team brings expertise and care to each project to create environments that promote emotional and physical health.",
+};
 
 export default function OurServices() {
   return (

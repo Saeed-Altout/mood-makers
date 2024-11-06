@@ -8,49 +8,49 @@ const projects = [
   {
     id: 1,
     title: "Shakhbout Villa 12",
-    description: "Design and build full interior",
+    description: "Full interior design and build",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      "Mood Makers transformed the interiors of Shakhbout Villa 12, blending functionality with elegance to create personalized, stylish spaces for the client.",
     imgUrlBefore: "/project01_before.png",
     imgUrlAfter: "/project01_after.png",
     date: new Date(),
   },
   {
     id: 2,
-    title: "Shakhbout Villa 12",
-    description: "Design and build full interior",
+    title: "Shakhbout Villa 13",
+    description: "Full interior design and build",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      "Our team revamped Shakhbout Villa 13, focusing on open, light-filled spaces that meet the family's unique needs.",
     imgUrlBefore: null,
     imgUrlAfter: "/project02_after.png",
     date: new Date(),
   },
   {
     id: 3,
-    title: "Shakhbout Villa 12",
-    description: "Design and build full interior",
+    title: "Shakhbout Villa 14",
+    description: "Full interior design and build",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      "With a modern yet cozy approach, Mood Makers redesigned Shakhbout Villa 14 to maximize space and comfort.",
     imgUrlBefore: null,
     imgUrlAfter: "/project03_after.png",
     date: new Date(),
   },
   {
     id: 4,
-    title: "Shakhbout Villa 12",
-    description: "Design and build full interior",
+    title: "Shakhbout Villa 15",
+    description: "Full interior design and build",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      "Mood Makers enhanced Shakhbout Villa 15 with high-quality finishes and unique room layouts to align with the client’s vision.",
     imgUrlBefore: "/project04_before.png",
     imgUrlAfter: null,
     date: new Date(),
   },
   {
     id: 5,
-    title: "Shakhbout Villa 12",
-    description: "Design and build full interior",
+    title: "Shakhbout Villa 16",
+    description: "Full interior design and build",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      "A blend of classic and contemporary styles turned Shakhbout Villa 16 into a sophisticated and comfortable space.",
     imgUrlBefore: "/project05_before.jpg",
     imgUrlAfter: "/project05_after.jpg",
     date: new Date(),
@@ -60,43 +60,43 @@ const projects = [
 const titleServices = [
   {
     id: 1,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Interior design consultation",
   },
   {
     id: 2,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Custom furniture design",
   },
   {
     id: 3,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Space planning",
   },
   {
     id: 4,
-    title: "Lorem ipsum dolor sit amet",
+    title: "3D modeling & rendering",
   },
   {
     id: 5,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Lighting solutions",
   },
   {
     id: 6,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Project management",
   },
   {
     id: 7,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Fit-out services",
   },
   {
     id: 8,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Kitchen & bathroom design",
   },
   {
     id: 9,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Flooring & wall finishes",
   },
   {
     id: 10,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Sustainable design",
   },
 ];
 
@@ -792,43 +792,43 @@ const ourServices = [
 const servicesList = [
   {
     id: 1,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Doors & Windows Installation",
   },
   {
     id: 2,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Furniture Installation",
   },
   {
     id: 3,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Tiling and Painting",
   },
   {
     id: 4,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Wall Cladding Installation",
   },
   {
     id: 5,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Decorative Painting Services",
   },
   {
     id: 6,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Wallpaper Installation",
   },
   {
     id: 7,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Flooring Works",
   },
   {
     id: 8,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Swimming Pool Installation",
   },
   {
     id: 9,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Epoxy Flooring",
   },
   {
     id: 10,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Carpet Supply and Installation",
   },
 ];
 

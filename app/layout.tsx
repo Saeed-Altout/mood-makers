@@ -14,7 +14,7 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: {
     default: siteConfig.title,
-    template: `%s - ${siteConfig.title}`,
+    template: `${siteConfig.title} - %s`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
