@@ -78,7 +78,7 @@ body {
     @apply border-border tracking-wide;
   }
   body {
-    @apply bg-background text-foreground bg-mood-light;
+    @apply text-foreground bg-mood-light/80;
   }
   p {
     @apply text-mood-primary leading-8 tracking-wide;

@@ -1022,34 +1022,45 @@ const progressStep = [
   {
     id: 1,
     number: "01",
-    description: "CLIENT MEETING AND BRAINSTORMING",
+    title: "Client meeting and brainstorming",
+    description:
+      "In this phase, we meet with the client to understand their needs, ideas, and vision for the project. We discuss project scope, objectives, and requirements to ensure alignment.",
     imgUrl: "/service-08.png",
   },
   {
     id: 2,
     number: "02",
-    description: "SKETCHING CLIENT REQUIREMENTS",
+    title: "Sketching client requirements",
+    description:
+      "We create preliminary sketches based on the client’s input to visualize the project’s layout and design. This helps identify the overall direction and design concept.",
     imgUrl: "/service-07.png",
   },
   {
     id: 3,
     number: "03",
-    description: "CONTRACT AGREEMENT",
+    title: "Contract agreement",
+    description:
+      "After the initial discussions, we finalize the terms of the project with a contract that outlines timelines, scope, deliverables, and payment terms. This ensures both parties are on the same page before moving forward.",
     imgUrl: "/service-06.png",
   },
   {
     id: 4,
     number: "04",
-    description: "CONCEPT 2D & 3D PRESENTATION",
+    title: "Concept 2D & 3D presentation",
+    description:
+      "We present the initial design concepts in both 2D and 3D formats, helping the client visualize the project from different perspectives. This includes floor plans, elevations, and 3D renderings.",
     imgUrl: "/service-05.png",
   },
   {
     id: 5,
     number: "05",
-    description: "HANDING OVER OF FULL CONCEPT (2D DRAWINGS & 3D PERSPECTIVES)",
+    title: "Handing over of full concept (2D drawings & 3D perspectives)",
+    description:
+      "Once the concept is finalized, we hand over the complete package, including detailed 2D drawings, 3D perspectives, and any other required documentation for execution. This marks the completion of the design phase.",
     imgUrl: "/service-04.png",
   },
 ];
+
 export const contactInfo = [
   {
     id: 1,
