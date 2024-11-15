@@ -1,64 +1,68 @@
-import { FaAddressBook, FaEnvelope, FaFax, FaMobile } from "react-icons/fa";
-import { Typography } from "@/components/ui/typography";
-import Image from "next/image";
-import { bgFooter } from "@/constants";
+import { contactInfo } from "@/constants";
+import { FaFacebook, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 export const Footer = () => {
-  const contactInfo = [
-    {
-      id: 1,
-      icon: FaAddressBook,
-      label: "ABU DHABI AL DANAH KHNISER STREET",
-    },
-    {
-      id: 2,
-      icon: FaMobile,
-      label: "026396019",
-    },
-    {
-      id: 3,
-      icon: FaFax,
-      label: "026506570",
-    },
-    {
-      id: 4,
-      icon: FaFax,
-      label: "0501232546",
-    },
-    {
-      id: 5,
-      icon: FaEnvelope,
-      label: "INFO@MOODMAKERSDECOR.COM",
-    },
-  ];
-
   return (
-    <footer className="relative py-10 overflow-x-hidden">
-      <Image
-        src={bgFooter}
-        alt="background image"
-        className="block md:hidden w-full h-full absolute top-0 left-0 object-cover"
-      />
-      <div className="container space-y-10">
-        <h3 className="text-center text-mood-light md:text-mood-primary text-xl md:text-2xl lg:text-3xl leading-10 max-w-5xl mx-auto">
-          Join us for an exciting adventure!
-        </h3>
-        <div className="relative pt-10">
-          <div className="hidden xl:block bg-mood-primary rounded-full w-full h-[92px] absolute top-[15px] left-0 z-0" />
-          <div className="relative z-40 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 xl:gap-0">
-            {contactInfo.map(({ label, icon: Icon }, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-start items-center gap-4 xl:gap-10"
-              >
-                <Icon className="text-mood-light md:text-mood-primary xl:text-mood-light text-4xl" />
-                <Typography className="text-center text-mood-light md:text-mood-primary">
-                  {label}
-                </Typography>
-              </div>
-            ))}
-          </div>
+    <footer className="py-10 bg-mood-primary">
+      <div className="py-10 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-3">
+          <h3 className="text-xl text-white font-semibold">Mood Makers</h3>
+          <p className="text-white font-sans text-sm md:text-base">
+            Our clients&apos; needs and satisfaction are at the forefront of
+            everything we do.
+          </p>
         </div>
+        <div className="space-y-3">
+          <h3 className="text-white font-medium">Links</h3>
+          <ul className="flex flex-col gap-3">
+            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+              About Us
+            </li>
+            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+              Our Services
+            </li>
+            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+              Our Projects
+            </li>
+            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+              Executive Summary
+            </li>
+            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+              Business Progress
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-3">
+          <h3 className="text-white font-medium">Contact us</h3>
+          <ul className="flex flex-col gap-3">
+            {contactInfo.map(({ label }, index) => (
+              <li
+                key={index}
+                className="flex items-center gap-3 cursor-pointer font-sans text-white hover:text-mood-light transition-all"
+              >
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="bg-mood-light/50 h-px w-full"></div>
+
+      <div className="py-10 container flex items-center justify-between">
+        <p className="text-white text-sm font-sans">
+          @copyright 2024 <span className="font-medium">Mood Makers</span>
+        </p>
+        <ul className="flex items-center gap-3">
+          <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+            <FaFacebook />
+          </li>
+          <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+            <FaTelegram />
+          </li>
+          <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
+            <FaWhatsapp />
+          </li>
+        </ul>
       </div>
     </footer>
   );

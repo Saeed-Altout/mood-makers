@@ -1,3 +1,4 @@
+import { FaAddressBook, FaEnvelope, FaFax, FaMobile } from "react-icons/fa";
 import heroAboutUs from "@/public/hero-about-us.png";
 import heroOurProjects from "@/public/hero-our-projects.png";
 import heroOurServices from "@/public/hero-our-services.png";
@@ -1049,7 +1050,86 @@ const progressStep = [
     imgUrl: "/service-04.png",
   },
 ];
+export const contactInfo = [
+  {
+    id: 1,
+    icon: FaAddressBook,
+    label: "Abu Dhabi Al Danah Khniser Street",
+  },
+  {
+    id: 2,
+    icon: FaEnvelope,
+    label: "info@moodmakersdecor.com",
+  },
+  {
+    id: 3,
+    icon: FaMobile,
+    label: "026396019",
+  },
+  {
+    id: 4,
+    icon: FaFax,
+    label: "026506570",
+  },
+  {
+    id: 5,
+    icon: FaFax,
+    label: "0501232546",
+  },
+];
+export const coreValue = [
+  {
+    id: 1,
+    title: "CREATIVITY",
+    description:
+      "We embrace creativity and innovation to deliver unique and personalized design solutions.",
+  },
+  {
+    id: 2,
+    title: "QUALITY",
+    description:
+      "We are committed to maintaining the highest standards of quality in all our projects.",
+  },
+  {
+    id: 3,
+    title: "SUSTAINABILITY",
+    description:
+      "We prioritize sustainable practices to create environmentally friendly and energy-efficient spaces",
+  },
+  {
+    id: 4,
+    title: "CLIENT-CENTRIC",
+    description:
+      "Our clients' needs and satisfaction are at the forefront of everything we do.",
+  },
+  {
+    id: 5,
+    title: "INTEGRITY",
+    description:
+      "We conduct our business with honesty, transparency, and professionalism",
+  },
+  {
+    id: 6,
+    title: "COLLABORATION",
+    description:
+      "We believe in the power of teamwork and collaboration, working closely with clients, partners, and our internal team to achieve outstanding results",
+  },
+];
 
+export const executiveSummary = [
+  {
+    id: 1,
+    title: "Vision",
+    description:
+      " Our vision is to be the leading interior design and fit-out company, renowned for our creativity, reliability, and excellence. We aim to set new standards in the industry by continuously evolving and embracing cutting-edge design trends and sustainable practices, thereby enhancing the lives of our clients and the communities we serve.",
+  },
+  {
+    id: 2,
+    title: "Mission",
+    description:
+      "Our mission is to reflect your dreams into your spaces through innovative and sustainable interior design solutions that reflect our clients' unique style and needs. We strive to deliver exceptional quality, creativity, and functionality in every project, ensuring client satisfaction and fostering lasting relationships.",
+  },
+];
 export {
   progressStep,
   heroAboutUs,
