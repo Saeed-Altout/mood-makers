@@ -1,15 +1,12 @@
 import Image from "next/image";
 import { GoDotFill } from "react-icons/go";
-import { Typography } from "@/components/ui/typography";
 
-import { ImageShape } from "./image-shape";
-import { HeadingStep } from "./heading-step";
-import { serviceSteps } from "@/constants";
 import { cn } from "@/lib/utils";
+import { serviceSteps } from "@/constants";
 
 export const ServicesStep = () => {
   return (
-    <div className="space-y-12">
+    <div className="space-y-20">
       {serviceSteps.map((service, index) => (
         <div className="space-y-3" key={index}>
           <h3 className="text-mood-primary font-semibold text-lg md:text-2xl lg:text-4xl">
@@ -99,9 +96,6 @@ export const ServicesStep = () => {
                     </div>
                   </div>
                 ))}
-                {group.image && (
-                  <ImageShape imageSrc={group.image} alt={group.title} />
-                )}
               </div>
             ))}
         </div>
