@@ -10,8 +10,7 @@ export const Footer = () => {
         <div className="space-y-3">
           <h3 className="text-xl text-white font-semibold">Mood Makers</h3>
           <p className="text-white font-sans text-sm md:text-base">
-            Our clients&apos; needs and satisfaction are at the forefront of
-            everything we do.
+            Crafting inspiring spaces with quality and creativity.
           </p>
         </div>
         <div className="space-y-3">
