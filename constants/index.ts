@@ -9,49 +9,39 @@ const projects = [
   {
     id: 1,
     title: "Shakhbout Villa 12",
-    description: "Full interior design and build",
-    about:
-      "Mood Makers transformed the interiors of Shakhbout Villa 12, blending functionality with elegance to create personalized, stylish spaces for the client.",
+    description: "Design and build full interior",
     imgUrlBefore: "/project01_before.png",
     imgUrlAfter: "/project01_after.png",
     date: new Date(),
   },
   {
     id: 2,
-    title: "Shakhbout Villa 13",
-    description: "Full interior design and build",
-    about:
-      "Our team revamped Shakhbout Villa 13, focusing on open, light-filled spaces that meet the family's unique needs.",
+    title: "Vocational Training Centre Shakboot",
+    description: "Epoxy, painting and landscaping works",
     imgUrlBefore: null,
     imgUrlAfter: "/project02_after.png",
     date: new Date(),
   },
   {
     id: 3,
-    title: "Shakhbout Villa 14",
-    description: "Full interior design and build",
-    about:
-      "With a modern yet cozy approach, Mood Makers redesigned Shakhbout Villa 14 to maximize space and comfort.",
+    title: "Al Ain Business centre",
+    description: "Waterproofing works",
     imgUrlBefore: null,
     imgUrlAfter: "/project03_after.png",
     date: new Date(),
   },
   {
     id: 4,
-    title: "Shakhbout Villa 15",
-    description: "Full interior design and build",
-    about:
-      "Mood Makers enhanced Shakhbout Villa 15 with high-quality finishes and unique room layouts to align with the client’s vision.",
+    title: "Emirates Center for Strategic Studies and Research (ECSSR)",
+    description: "Curb stone and interlock works",
     imgUrlBefore: "/project04_before.png",
     imgUrlAfter: null,
     date: new Date(),
   },
   {
     id: 5,
-    title: "Shakhbout Villa 16",
+    title: "Al Nahyan Villa",
     description: "Full interior design and build",
-    about:
-      "A blend of classic and contemporary styles turned Shakhbout Villa 16 into a sophisticated and comfortable space.",
     imgUrlBefore: "/project05_before.jpg",
     imgUrlAfter: "/project05_after.jpg",
     date: new Date(),

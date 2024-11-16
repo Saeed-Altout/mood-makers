@@ -1,13 +1,9 @@
-import { heroOurProjects, projects } from "@/constants";
-
-import { Hero } from "@/components/ui/hero";
-import { Heading } from "@/components/ui/heading";
 import Image from "next/image";
-import { Typography } from "@/components/ui/typography";
-import { CallOut } from "@/components/ui/call-out";
-import { Section } from "@/components/ui/section";
 import { format } from "date-fns";
 import { Metadata } from "next";
+
+import { Hero } from "./_components/hero";
+import { projects } from "@/constants";
 
 export const metadata: Metadata = {
   title: "Completed Community Projects",
@@ -18,31 +14,32 @@ export const metadata: Metadata = {
 export default function ourProjectsPage() {
   return (
     <main className="min-h-full">
-      <Hero
-        src={heroOurProjects}
-        alt="Image hero section"
-        title="Mood makers"
-        description="Company profile"
-      />
-      <Heading
-        label="Completed Projects"
-        fDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
-        pDescription="a brief explanation for Lorem ipsum dolit"
-        lDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
-      />
-      <Section id="papers" className="py-10">
-        <div className="container space-y-10 grid grid-cols-1 gap-20">
+      <Hero />
+      <div className="container py-12 space-y-10">
+        <div className="space-y-3">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-mood-primary">
+            Completed Projects
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg leading-8 lg:leading-10 font-sans">
+            Our company is dedicated to creativity, quality, and sustainability,
+            delivering innovative, client-focused design solutions that enhance
+            lives and foster lasting relationships.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-20">
           {projects.map((item, index) => (
-            <div key={index} className="space-y-10">
-              <CallOut variant="secondary" align="left">
-                <h3 className="text-mood-primary text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-sans font-bold uppercase">
+            <div key={index} className="space-y-20">
+              <div
+                key={index}
+                className="border-l-4 border-mood-primary text-mood-primary py-3 pl-4"
+              >
+                <h2 className="text-2xl lg:text-3xl font-semibold">
                   {item.title}
-                </h3>
-                <p className="text-mood-primary capitalize text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg leading-8 lg:leading-10 font-sans">
                   {item.description}
                 </p>
-              </CallOut>
-              <Typography>{item.about}</Typography>
+              </div>
               <div className="grid grid-cols-1 w-full gap-16">
                 {item.imgUrlBefore && (
                   <div className="relative rounded-3xl overflow-hidden">
@@ -86,7 +83,7 @@ export default function ourProjectsPage() {
             </div>
           ))}
         </div>
-      </Section>
+      </div>
     </main>
   );
 }
