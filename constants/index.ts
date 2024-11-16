@@ -838,17 +838,17 @@ const serviceSteps = [
     number: "01",
     title: "Doors & Windows Installation Work",
     description:
-      "our skilled team leverages expertise and premium materials to deliver results that exceed expectations. Whether it's upgrading existing structures or outfitting new developments, our dedication to quality craftsmanship and customer satisfaction remains unwavering, making us the preferred choice for all doors and windows installation needs",
-    subsections: [],
-    image: null,
+      "our skilled team leverages expertise and premium materials to deliver results that exceed expectations. Whether it's upgrading existing structures or outfitting new developments, our dedication to quality craftsmanship and customer satisfaction remains unwavering, making us the preferred choice for all doors and windows installation needs.",
+    groups: [],
+    image: "/service-01.png",
   },
   {
     number: "02",
     title: "Installation of Furniture Works",
-    image: "/serve.png",
+    image: "/services/service02.png",
     description:
-      "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space",
-    subsections: [],
+      "Our company specializes in Furniture Installation Works, offering precise setup services tailored for residential and commercial settings. Our dedicated team meticulously assembles and positions furniture, ensuring optimal functionality and visual appeal in every space.",
+    groups: [],
   },
   {
     number: "03",
@@ -859,23 +859,23 @@ const serviceSteps = [
     groups: [
       {
         title: "Wall Finishing Works",
-        image: "/serve.png",
+        image: "/service-02.png",
         sections: [
           {
             title: "Wall Cladding Supply and Installation",
             content: {
               description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+                "We offer a diverse range of wall cladding options and expert installation services to enhance the appearance and durability of your walls.",
               list: [],
             },
             image: null,
             label: null,
           },
           {
-            title: "Painting Works Our Skilled Painters",
+            title: "Painting Works",
             content: {
               description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+                "Our skilled painters provide high-quality painting services, using premium paints and techniques to achieve flawless finishes that breathe new life into your walls.",
               list: [],
             },
             image: null,
@@ -885,7 +885,7 @@ const serviceSteps = [
             title: "Decorative Special Painting",
             content: {
               description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+                "Elevate your space with our specialized decorative painting services, including faux finishes, texture painting, murals, and other artistic techniques to add character and charm to your walls.",
               list: [],
             },
             image: null,
@@ -895,7 +895,7 @@ const serviceSteps = [
             title: "Wallpaper Supply and Installation",
             content: {
               description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
+                " Explore our extensive collection of wallpapers and let our experienced team handle the professional installation, transforming your walls with patterns, textures, and colors that suit your style.",
               list: [],
             },
             image: null,
@@ -905,44 +905,34 @@ const serviceSteps = [
       },
       {
         title: "Painting Works",
-        image: "/serve.png",
+        image: null,
         sections: [
           {
             title: "Internal Paints",
             content: {
               description: null,
               list: [
-                "Emulsion Paint",
-                "Enamel Paint",
-                "Acrylic Paint",
-                "Distemper Paint",
+                "Emulsion Paint.",
+                "Enamel Paint.",
+                "Acrylic Paint.",
+                "Distemper Paint.",
               ],
             },
-            image: "/serve.png",
+            image: null,
             label: null,
           },
           {
-            title: "Painting Works Our Skilled Painters",
-            content: {
-              description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae libero malesuada feugiat. Integer sit amet velit nec nulla facilisis tincidunt.",
-              list: [],
-            },
-            image: "/serve.png",
-            label: null,
-          },
-          {
-            title: "Decorative Special Painting",
+            title: "External Paints",
             content: {
               description: null,
               list: [
-                "Emulsion Paint",
-                "Enamel Paint",
-                "Acrylic Paint",
-                "Distemper Paint",
+                "Exterior Emulsion.",
+                "Masonry Paint.",
+                "Acrylic Exterior Paint.",
+                "Oil-Based Paint.",
               ],
             },
-            image: "/serve.png",
+            image: null,
             label: null,
           },
         ],
@@ -952,27 +942,27 @@ const serviceSteps = [
   {
     number: "04",
     title: "floor wall tiling works",
-    image: null,
+    image: "/service-04.png",
     description: null,
     groups: [
       {
-        title: "Flooring works:",
+        title: "Flooring works",
         image: null,
         sections: [
           {
-            title: "Wall Cladding Supply and Installation",
+            title: "Flooring works:",
             content: {
               description: null,
               list: [
-                "Porcelain, marble, ceramic, and tilling supply and installation",
-                "carpet supply and installation",
-                "Epoxy works",
-                "screed casting",
-                "Cast in situ flooring",
-                "rubber flooring",
+                "Porcelain,marble, ceramic, and tilling supply and installation.",
+                "Carpet supply and installation.",
+                "Epoxy works.",
+                "Screed casting.",
+                "Cast in situ flooring.",
+                "Rubber flooring.",
               ],
             },
-            image: "/serve.png",
+            image: null,
             label: null,
           },
         ],
@@ -981,27 +971,28 @@ const serviceSteps = [
   },
   {
     number: "05",
-    title: "swimming pool installation works",
-    image: null,
-    description: null,
+    title: "Swimming Pool & Installation Works",
+    image: "/service-05.png",
+    description:
+      "We are dedicated to designing and building swimming pools that turn your space into a personal paradise.",
     groups: [
       {
-        title: "Flooring works:",
+        title: "Our expertise includes:",
         image: null,
         sections: [
           {
-            title: "",
+            title: null,
             content: {
               description:
-                "We are dedicated to designing and building swimming pools that turn your space into a personal paradise. Our includes:",
+                "Our pools are well it, with smooth, non-slip surfaces, and no sharp edges. They feature easy access with walk-in steps and darker tile lines at the edges of steps and seats. We pay special attention to electrical safety and suction control, ensuring the highest standards of safety and functional ity.",
               list: [
-                "Overflow Systems",
-                "Skimmer Systems Infinity Pools",
-                "Mirror Effect Pools",
-                "Bio-Design Pools",
+                "Overflow Systems.",
+                "Skimmer Systems Infinity Pools.",
+                "Mirror Effect Pools.",
+                "Bio-Design Pools.",
               ],
             },
-            image: "/serve.png",
+            image: null,
             label: null,
           },
         ],
@@ -1011,9 +1002,25 @@ const serviceSteps = [
   {
     number: "06",
     title: "Wallpaper Fixing Works",
-    image: "/serve.png",
+    image: "/service-04.png",
     description:
-      "Create your dream home with Mood makers. With thousands of wallpaper designs available, you ll be sure to find your style.",
+      "Create your dream home with Mood makers. With thousands of wallpaper designs available, you'll be sure to find your style.",
+    groups: [],
+  },
+  {
+    number: "07",
+    title: "Buildings Maintenance",
+    image: "/service-04.png",
+    description:
+      "Maintenance tasks may involve painting, lubricating, and replacing worn-out or damaged parts to prevent deterioration and ensure optimal performance. Additionally, building maintenance services often include emergency response and troubleshooting to address unforeseen issues promptly. By providing comprehensive maintenance solutions, these services help property owners maintain the value, efficiency, and longevity of their buildings while creating safe and comfortable environments for occupants.",
+    groups: [],
+  },
+  {
+    number: "08",
+    title: "Gypsum Works",
+    image: "/service-04.png",
+    description:
+      "Our proficient team utilizes their expertise and high-quality materials to achieve outcomes that surpass expectations. Whether enhancing current structures or outfitting new projects, our commitment to superior craftsmanship and client contentment remains steadfast, establishing us as the preferred option for all gypsum works installations.",
     groups: [],
   },
 ];
