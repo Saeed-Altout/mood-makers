@@ -43,7 +43,7 @@ export const siteConfig = {
 export const routes = [
   {
     label: "Executive Summary",
-    href: "/executive-summary",
+    href: "/",
   },
   {
     label: "Business Process",

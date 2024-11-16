@@ -25,7 +25,7 @@ export default function AboutUsPage() {
             lives and foster lasting relationships.
           </p>
         </div>
-        <div className="container space-y-10 grid grid-cols-1 gap-20">
+        <div className="container grid grid-cols-1 gap-10">
           {certificationData.map((item, index) => (
             <Image
               key={index}
@@ -33,7 +33,7 @@ export default function AboutUsPage() {
               alt={`paper-${index}`}
               width={1000}
               height={1000}
-              className="object-contain h-[500px] md:h-[800px] lg:h-[1100] xl:h-[1500px] w-auto rounded-2xl "
+              className="object-cover h-auto lg:h-[1100] xl:h-[1500px] w-full mx-auto rounded-2xl "
             />
           ))}
         </div>
