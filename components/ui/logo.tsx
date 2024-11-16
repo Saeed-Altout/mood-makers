@@ -9,7 +9,7 @@ export const Logo = ({
       href="/"
       className={cn("capitalize text-white text-3xl font-black", className)}
     >
-      Mode Makers
+      Mood Makers
     </Link>
   );
 };

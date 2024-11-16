@@ -6,9 +6,9 @@ export const Hero = () => {
           Mood makers
         </h1>
         <div className="h-1 w-1/2 bg-gradient-to-r from-[#FFFFFF] to-[#99999911]" />
-        <p className="text-white uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light">
+        {/* <p className="text-white uppercase text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light">
           Company profile
-        </p>
+        </p> */}
       </div>
     </div>
   );
