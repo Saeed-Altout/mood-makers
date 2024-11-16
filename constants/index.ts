@@ -1,4 +1,5 @@
-import { FaAddressBook, FaEnvelope, FaFax, FaMobile } from "react-icons/fa";
+import { Mail, Smartphone, PhoneCall, Globe } from "lucide-react";
+
 import heroAboutUs from "@/public/hero-about-us.png";
 import heroOurProjects from "@/public/hero-our-projects.png";
 import heroOurServices from "@/public/hero-our-services.png";
@@ -1091,31 +1092,27 @@ const progressStep = [
 
 export const contactInfo = [
   {
-    id: 1,
-    icon: FaAddressBook,
-    label: "Abu Dhabi Al Danah Khniser Street",
-  },
-  {
     id: 2,
-    icon: FaEnvelope,
+    icon: Mail,
     label: "info@moodmakersdecor.com",
   },
   {
     id: 3,
-    icon: FaMobile,
-    label: "026396019",
+    icon: Globe,
+    label: "www.moodmakersdecor.com",
   },
   {
     id: 4,
-    icon: FaFax,
-    label: "026506570",
+    icon: PhoneCall,
+    label: "Line: 026396019, Fax: 026506570",
   },
   {
     id: 5,
-    icon: FaFax,
-    label: "0501232546",
+    icon: Smartphone,
+    label: "Mobile: 0501232546",
   },
 ];
+
 export const coreValue = [
   {
     id: 1,

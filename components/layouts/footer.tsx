@@ -1,5 +1,7 @@
+import { routes } from "@/config";
 import { contactInfo } from "@/constants";
-import { FaFacebook, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { MapPin } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -15,32 +17,25 @@ export const Footer = () => {
         <div className="space-y-3">
           <h3 className="text-white font-medium">Links</h3>
           <ul className="flex flex-col gap-3">
-            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-              About Us
-            </li>
-            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-              Our Services
-            </li>
-            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-              Our Projects
-            </li>
-            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-              Executive Summary
-            </li>
-            <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-              Business Progress
-            </li>
+            {routes.map(({ label, href }, index) => (
+              <li key={index}>
+                <Link
+                  href={href}
+                  className="font-sans text-white hover:text-mood-light transition-all"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="space-y-3">
-          <h3 className="text-white font-medium">Contact us</h3>
+          <h3 className="text-white font-medium">Contact Info</h3>
           <ul className="flex flex-col gap-3">
-            {contactInfo.map(({ label }, index) => (
-              <li
-                key={index}
-                className="flex items-center gap-3 cursor-pointer font-sans text-white hover:text-mood-light transition-all"
-              >
-                {label}
+            {contactInfo.map(({ label, icon: Icon }, index) => (
+              <li key={index} className="flex items-center gap-3">
+                <Icon className="h-4 w-4 text-white" />
+                <p className="flex-1 font-sans text-white">{label}</p>
               </li>
             ))}
           </ul>
@@ -48,21 +43,17 @@ export const Footer = () => {
       </div>
       <div className="bg-mood-light/50 h-px w-full"></div>
 
-      <div className="py-10 container flex items-center justify-between">
-        <p className="text-white text-sm font-sans">
-          @copyright 2024 <span className="font-medium">Mood Makers</span>
+      <div className="py-10 container flex flex-col md:flex-row items-center justify-between gap-10">
+        <p className="text-white text-sm font-sans text-center md:text-left flex items-center gap-2">
+          <MapPin className="h-4 w-4 hidden md:block" />
+          <span className="flex-1">
+            Abu Dhabi, Al Danah, Khniser Street, ADCP Tower B, Office 401
+          </span>
         </p>
-        <ul className="flex items-center gap-3">
-          <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-            <FaFacebook />
-          </li>
-          <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-            <FaTelegram />
-          </li>
-          <li className="cursor-pointer font-sans text-white hover:text-mood-light transition-all">
-            <FaWhatsapp />
-          </li>
-        </ul>
+        <p className="text-white text-sm font-sans text-center md:text-left">
+          © {new Date().getFullYear()}{" "}
+          <span className="font-medium">Mood Makers</span>. All rights reserved.
+        </p>
       </div>
     </footer>
   );
