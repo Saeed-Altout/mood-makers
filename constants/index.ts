@@ -47,7 +47,38 @@ const projects = [
     date: new Date(),
   },
 ];
-
+export const certificationData = [
+  {
+    id: 1,
+    imgUrl: "/certificate (1).png",
+    date: new Date().getDate(),
+  },
+  {
+    id: 2,
+    imgUrl: "/certificate (2).png",
+    date: new Date().getDate(),
+  },
+  {
+    id: 3,
+    imgUrl: "/certificate (3).png",
+    date: new Date().getDate(),
+  },
+  {
+    id: 4,
+    imgUrl: "/certificate.png",
+    date: new Date().getDate(),
+  },
+  {
+    id: 5,
+    imgUrl: "/certificate.png",
+    date: new Date().getDate(),
+  },
+  {
+    id: 6,
+    imgUrl: "/certificate.png",
+    date: new Date().getDate(),
+  },
+];
 const titleServices = [
   {
     id: 1,
