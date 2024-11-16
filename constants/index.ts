@@ -815,44 +815,48 @@ const ourServices = [
 const servicesList = [
   {
     id: 1,
-    title: "Doors & Windows Installation",
+    title: "Doors and Windows Installation Works",
   },
   {
     id: 2,
-    title: "Furniture Installation",
+    title: "Installation of Furniture Works",
   },
   {
     id: 3,
-    title: "Tiling and Painting",
+    title: "Tinging and Painting Works",
   },
   {
     id: 4,
-    title: "Wall Cladding Installation",
+    title: "Floor & Wall Tiling Works",
   },
   {
     id: 5,
-    title: "Decorative Painting Services",
+    title: "Swimming Pool & Installation Works",
   },
   {
     id: 6,
-    title: "Wallpaper Installation",
+    title: "Wallpaper Fixing Works",
   },
   {
     id: 7,
-    title: "Flooring Works",
+    title: "Buildings Maintenance",
   },
   {
     id: 8,
-    title: "Swimming Pool Installation",
+    title: "Gypsum Works",
   },
   {
     id: 9,
-    title: "Epoxy Flooring",
+    title: "Desiging 2D & 3D",
   },
   {
     id: 10,
-    title: "Carpet Supply and Installation",
+    title: "Screed, Plastering and waterproofing works",
   },
+  // {
+  //   id: 11,
+  //   title: "Landscaping process",
+  // },
 ];
 
 const serviceSteps = [
